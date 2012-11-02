@@ -1,0 +1,17 @@
+
+%p
+  %strong Username:
+  = @player.username
+%p
+  %strong Last Login:
+  = @player.last_login
+%p
+  %strong Online:
+  = @player.online
+
+%p
+  = link_to "Edit", edit_player_path(@player)
+  |
+  = link_to "Destroy", @player, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", players_path

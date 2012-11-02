@@ -31,3 +31,5 @@ end
 gem 'jquery-rails'
 
 gem 'haml'
+
+gem "mocha", :group => :test

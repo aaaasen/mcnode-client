@@ -1,0 +1,16 @@
+
+%table
+  %tr
+    %th Username
+    %th Last login
+    %th Online
+  - for player in @players
+    %tr
+      %td= player.username
+      %td= player.last_login
+      %td= player.online
+      %td= link_to 'Show', player
+      %td= link_to 'Edit', edit_player_path(player)
+      %td= link_to 'Destroy', player, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Player", new_player_path

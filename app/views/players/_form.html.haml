@@ -1,0 +1,16 @@
+= form_for @player do |f|
+  = f.error_messages
+  %p
+    = f.label :username
+    %br
+    = f.text_field :username
+  %p
+    = f.label :last_login
+    %br
+    = f.datetime_select :last_login
+  %p
+    = f.label :online
+    %br
+    = f.check_box :online
+  %p
+    = f.submit
