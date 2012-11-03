@@ -1,4 +1,6 @@
 McnodeClient::Application.routes.draw do
+  resources :comments
+
   resources :players
 
   # The priority is based upon order of creation:

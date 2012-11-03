@@ -1,0 +1,12 @@
+= form_for @comment do |f|
+  = f.error_messages
+  %p
+    = f.label :string
+    %br
+    = f.text_field :string
+  %p
+    = f.label :commenter
+    %br
+    = f.text_field :commenter
+  %p
+    = f.submit
