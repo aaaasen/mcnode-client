@@ -1,7 +1,5 @@
 
 .comment
-	.row
-		.span2
-			= comment.created_at
-		.span8
-			= comment.content
+	%h5{ :style => 'padding: 0px; margin: 0px; display: inline-block;' }
+		Notch
+	= comment.content
