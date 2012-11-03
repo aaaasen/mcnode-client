@@ -1,14 +1,4 @@
 
-%table
-  %tr
-    %th String
-    %th Commenter
-  - for comment in @comments
-    %tr
-      %td= comment.content
-      %td= comment.player
-      %td= link_to 'Show', comment
-      %td= link_to 'Edit', edit_comment_path(comment)
-      %td= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete
+= render @comments
 
-%p= link_to "New Comment", new_comment_path
+= render @players
