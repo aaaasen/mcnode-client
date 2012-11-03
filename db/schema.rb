@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20121103050815) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "players", :force => true do |t|
+  create_table "players", :id => false, :force => true do |t|
     t.string   "username"
     t.datetime "last_login"
     t.boolean  "online"

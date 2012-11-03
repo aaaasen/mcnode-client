@@ -1,3 +1,6 @@
 
 .player
 	= player.username
+	%small.muted
+		%i
+			= player.online ? 'online' : 'offline'
