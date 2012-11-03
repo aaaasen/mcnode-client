@@ -1,11 +1,10 @@
-- title "Comment"
 
 %p
   %strong String:
-  = @comment.string
+  = @comment.content
 %p
   %strong Commenter:
-  = @comment.commenter
+  / = @comment.commenter
 
 %p
   = link_to "Edit", edit_comment_path(@comment)

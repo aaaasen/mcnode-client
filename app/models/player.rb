@@ -6,4 +6,6 @@ class Player < ActiveRecord::Base
 						:uniqueness => true
 
 	self.primary_key = :username
+
+	has_many :comments
 end

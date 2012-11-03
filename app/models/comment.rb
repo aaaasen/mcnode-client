@@ -1,3 +1,5 @@
 class Comment < ActiveRecord::Base
-  attr_accessible :string, :commenter
+  attr_accessible :content, :commenter
+
+  belongs_to :player
 end
