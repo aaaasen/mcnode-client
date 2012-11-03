@@ -1,6 +1,7 @@
 
 .player
-	= player.username
+	%p.bold{ :style => 'display: inline-block;' }
+		= player.username
 	%small.muted
 		%i
 			= player.online ? 'online' : 'offline'
