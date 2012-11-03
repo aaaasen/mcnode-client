@@ -5,4 +5,5 @@ class Player < ActiveRecord::Base
 						:length => { :minimum => 6, :maximum => 30 },
 						:uniqueness => true
 
+	self.primary_key = :username
 end
