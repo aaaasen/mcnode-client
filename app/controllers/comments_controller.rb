@@ -13,6 +13,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(params[:comment])
+    @comment.update_attributes(:player_id => Player.where(:username => "LFA2711").first.id)
     if @comment.save
       redirect_to @comment, :notice => "Successfully created comment."
     else
