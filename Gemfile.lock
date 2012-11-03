@@ -39,6 +39,7 @@ GEM
     coffee-script-source (1.4.0)
     commonjs (0.2.6)
     daemons (1.1.9)
+    dynamic_form (1.1.4)
     erubis (2.7.0)
     eventmachine (1.0.0)
     execjs (1.4.0)
@@ -131,6 +132,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  dynamic_form
   haml
   high_voltage
   jquery-rails

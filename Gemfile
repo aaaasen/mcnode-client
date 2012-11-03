@@ -33,3 +33,6 @@ gem 'jquery-rails'
 gem 'haml'
 
 gem "mocha", :group => :test
+
+# form error messages
+gem 'dynamic_form'
