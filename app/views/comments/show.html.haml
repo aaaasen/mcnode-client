@@ -3,8 +3,8 @@
   %strong String:
   = @comment.content
 %p
-  %strong Commenter:
-  / = @comment.commenter
+  %strong Player:
+  = @comment.player
 
 %p
   = link_to "Edit", edit_comment_path(@comment)
