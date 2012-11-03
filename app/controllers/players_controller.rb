@@ -31,8 +31,10 @@ class PlayersController < ApplicationController
 
   def update
     @player = Player.find(params[:id])
+    print '!!!update'
     if @player.update_attributes(params[:player])
-      redirect_to @player, :notice  => "Successfully updated player."
+      print '!!!success'
+      render :action => 'show'
     else
       render :action => 'edit'
     end
